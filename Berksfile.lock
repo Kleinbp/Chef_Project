@@ -1,0 +1,13 @@
+DEPENDENCIES
+  learn_chef_httpd
+    path: .
+    metadata: true
+
+GRAPH
+  httpd (0.6.2)
+  learn_chef_httpd (0.1.0)
+    httpd (>= 0.0.0)
+    ntp (>= 0.0.0)
+    sqlite (>= 0.0.0)
+  ntp (5.1.0)
+  sqlite (1.1.3)
