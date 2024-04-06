@@ -1,0 +1,9 @@
+# /etc/httpd/conf.d/my_website.conf
+
+<VirtualHost *:80>
+    ServerName <%= node['httpd']['server_name'] %>
+    DocumentRoot <%= node['httpd']['document_root'] %>
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>

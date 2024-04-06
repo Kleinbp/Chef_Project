@@ -1,0 +1,8 @@
+#NTP server configuration
+
+<% node['ntp']['servers'].each do |server| %>
+server <%= server %>
+<% end %>
+
+
+
